@@ -8,6 +8,7 @@ const Recipe = ({ title, calories, image, ingredients }) => {
             <ol>
                 {ingredients.map(ingredient => (
                     <li key={ingredient.text}>{ingredient.text}</li>
+
                 ))}
             </ol>
             <p>{calories.toFixed(2)} calories</p>
